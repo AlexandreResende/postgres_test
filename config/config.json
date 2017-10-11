@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "aar6947",
+    "password": 12345,
+    "database": "users",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "aar6947",
+    "password": 12345,
+    "database": "users",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "aar6947",
+    "password": 12345,
+    "database": "users",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
