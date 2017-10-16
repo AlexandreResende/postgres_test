@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var User = sequelize.define('User', {
-    user: jsonb
+  var usuarios = sequelize.define('usuarios', {
+    usuario: DataTypes.JSONB
   }, {
     classMethods: {
       associate: function(models) {
@@ -9,5 +9,5 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
   });
-  return User;
+  return usuarios;
 };

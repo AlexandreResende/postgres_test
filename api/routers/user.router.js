@@ -10,9 +10,9 @@ router.get('/users', (req, res) => {
 });
 
 router.post('/users', (req, res) => {
-
+    
     models.User.create({
-        user: {
+        usuario: {
             name: req.body.name,
             email:req.body.email,
             password: req.body.password
