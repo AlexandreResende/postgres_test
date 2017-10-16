@@ -14,7 +14,8 @@ router.post('/users', (req, res) => {
     models.User.create({
         name: req.body.name,
         email:req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        userId: 1
     }).then(user => {
         res.json(user);
     });
