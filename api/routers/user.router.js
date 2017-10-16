@@ -15,9 +15,11 @@ router.post('/users', (req, res) => {
         name: req.body.name,
         email:req.body.email,
         password: req.body.password,
-        userId: 1
+        userId: req.body.userId
     }).then(user => {
         res.json(user);
+    }).catch(err => {
+        res.json(err);
     });
 
 });
