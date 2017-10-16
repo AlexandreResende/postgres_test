@@ -12,11 +12,7 @@ router.get('/users', (req, res) => {
 router.post('/users', (req, res) => {
     
     models.usuarios.create({
-        usuario: {
-            name: req.body.name,
-            email:req.body.email,
-            password: req.body.password
-        }
+        usuario: req.body
     }).then(usuario => {
         res.json(usuario);
     }).catch(err => {
