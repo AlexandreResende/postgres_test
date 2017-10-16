@@ -11,7 +11,7 @@ router.get('/users', (req, res) => {
 
 router.post('/users', (req, res) => {
     
-    models.usuario.create({
+    models.usuarios.create({
         usuario: {
             name: req.body.name,
             email:req.body.email,
