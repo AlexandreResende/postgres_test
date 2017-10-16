@@ -11,14 +11,14 @@ router.get('/users', (req, res) => {
 
 router.post('/users', (req, res) => {
     
-    models.User.create({
+    models.usuario.create({
         usuario: {
             name: req.body.name,
             email:req.body.email,
             password: req.body.password
         }
-    }).then(user => {
-        res.json(user);
+    }).then(usuario => {
+        res.json(usuario);
     }).catch(err => {
         res.json(err);
     });
